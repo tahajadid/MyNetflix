@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C04FA5B282C54C200807B6B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA5A282C54C200807B6B /* Title.swift */; };
+		9C04FA5D282C5C8F00807B6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA5C282C5C8F00807B6B /* Extensions.swift */; };
+		9C04FA61282C624A00807B6B /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA60282C624A00807B6B /* TitleCollectionViewCell.swift */; };
+		9C04FA64282C643B00807B6B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9C04FA63282C643B00807B6B /* SDWebImage */; };
+		9C04FA66282C643B00807B6B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9C04FA65282C643B00807B6B /* SDWebImageMapKit */; };
 		9C8BAC50281C9961009A1DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC4F281C9961009A1DEF /* AppDelegate.swift */; };
 		9C8BAC52281C9961009A1DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC51281C9961009A1DEF /* SceneDelegate.swift */; };
 		9C8BAC54281C9961009A1DEF /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC53281C9961009A1DEF /* MainTabBarViewController.swift */; };
@@ -43,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C04FA5A282C54C200807B6B /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		9C04FA5C282C5C8F00807B6B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9C04FA60282C624A00807B6B /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		9C8BAC4C281C9961009A1DEF /* My Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Netflix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8BAC4F281C9961009A1DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C8BAC51281C9961009A1DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C04FA66282C643B00807B6B /* SDWebImageMapKit in Frameworks */,
+				9C04FA64282C643B00807B6B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +173,7 @@
 			children = (
 				9CDAE645281F05C000F6D41B /* CollectionViewTableViewCell.swift */,
 				9CDAE6472826792A00F6D41B /* HeroHeaderUIView.swift */,
+				9C04FA60282C624A00807B6B /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 		9CDAE642281F055500F6D41B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C04FA5A282C54C200807B6B /* Title.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +196,7 @@
 		9CDAE643281F056C00F6D41B /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				9C04FA5C282C5C8F00807B6B /* Extensions.swift */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -212,6 +225,10 @@
 			dependencies = (
 			);
 			name = "My Netflix";
+			packageProductDependencies = (
+				9C04FA63282C643B00807B6B /* SDWebImage */,
+				9C04FA65282C643B00807B6B /* SDWebImageMapKit */,
+			);
 			productName = "My Netflix";
 			productReference = 9C8BAC4C281C9961009A1DEF /* My Netflix.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 9C8BAC43281C9961009A1DEF;
+			packageReferences = (
+				9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9C8BAC4D281C9961009A1DEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,11 +348,14 @@
 			files = (
 				9C8BAC87281CA3ED009A1DEF /* UpcomingViewController.swift in Sources */,
 				9CDAE6482826792A00F6D41B /* HeroHeaderUIView.swift in Sources */,
+				9C04FA5B282C54C200807B6B /* Title.swift in Sources */,
 				9C8BAC89281CA3F8009A1DEF /* SearchViewController.swift in Sources */,
 				9C8BAC85281CA3D2009A1DEF /* HomeViewController.swift in Sources */,
 				9C8BAC54281C9961009A1DEF /* MainTabBarViewController.swift in Sources */,
 				9C8BAC50281C9961009A1DEF /* AppDelegate.swift in Sources */,
+				9C04FA61282C624A00807B6B /* TitleCollectionViewCell.swift in Sources */,
 				9CDAE646281F05C000F6D41B /* CollectionViewTableViewCell.swift in Sources */,
+				9C04FA5D282C5C8F00807B6B /* Extensions.swift in Sources */,
 				9C8BAC5A281C9962009A1DEF /* My_Netflix.xcdatamodeld in Sources */,
 				9CDAE64A2827D18A00F6D41B /* APICaller.swift in Sources */,
 				9C8BAC8B281CA47A009A1DEF /* DownloadViewController.swift in Sources */,
@@ -662,6 +685,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C04FA63282C643B00807B6B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		9C04FA65282C643B00807B6B /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9C8BAC58281C9962009A1DEF /* My_Netflix.xcdatamodeld */ = {
