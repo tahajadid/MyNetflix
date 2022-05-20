@@ -10,8 +10,8 @@
 		9C04FA5B282C54C200807B6B /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA5A282C54C200807B6B /* Title.swift */; };
 		9C04FA5D282C5C8F00807B6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA5C282C5C8F00807B6B /* Extensions.swift */; };
 		9C04FA61282C624A00807B6B /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C04FA60282C624A00807B6B /* TitleCollectionViewCell.swift */; };
-		9C04FA64282C643B00807B6B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9C04FA63282C643B00807B6B /* SDWebImage */; };
-		9C04FA66282C643B00807B6B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9C04FA65282C643B00807B6B /* SDWebImageMapKit */; };
+		9C1F73062837F01E008FF3F4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1F73052837F01E008FF3F4 /* SDWebImage */; };
+		9C1F73082837F01E008FF3F4 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1F73072837F01E008FF3F4 /* SDWebImageMapKit */; };
 		9C8BAC50281C9961009A1DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC4F281C9961009A1DEF /* AppDelegate.swift */; };
 		9C8BAC52281C9961009A1DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC51281C9961009A1DEF /* SceneDelegate.swift */; };
 		9C8BAC54281C9961009A1DEF /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BAC53281C9961009A1DEF /* MainTabBarViewController.swift */; };
@@ -78,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C04FA66282C643B00807B6B /* SDWebImageMapKit in Frameworks */,
-				9C04FA64282C643B00807B6B /* SDWebImage in Frameworks */,
+				9C1F73062837F01E008FF3F4 /* SDWebImage in Frameworks */,
+				9C1F73082837F01E008FF3F4 /* SDWebImageMapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +226,8 @@
 			);
 			name = "My Netflix";
 			packageProductDependencies = (
-				9C04FA63282C643B00807B6B /* SDWebImage */,
-				9C04FA65282C643B00807B6B /* SDWebImageMapKit */,
+				9C1F73052837F01E008FF3F4 /* SDWebImage */,
+				9C1F73072837F01E008FF3F4 /* SDWebImageMapKit */,
 			);
 			productName = "My Netflix";
 			productReference = 9C8BAC4C281C9961009A1DEF /* My Netflix.app */;
@@ -302,7 +302,7 @@
 			);
 			mainGroup = 9C8BAC43281C9961009A1DEF;
 			packageReferences = (
-				9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				9C1F73042837F01E008FF3F4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 9C8BAC4D281C9961009A1DEF /* Products */;
 			projectDirPath = "";
@@ -687,25 +687,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		9C1F73042837F01E008FF3F4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9C04FA63282C643B00807B6B /* SDWebImage */ = {
+		9C1F73052837F01E008FF3F4 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 9C1F73042837F01E008FF3F4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
-		9C04FA65282C643B00807B6B /* SDWebImageMapKit */ = {
+		9C1F73072837F01E008FF3F4 /* SDWebImageMapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9C04FA62282C643B00807B6B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = 9C1F73042837F01E008FF3F4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
